@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Risecommerce (support@risecommerce.com). All rights reserved.
+ * 
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Cron:etc/crontab.xsd">
+    <group id="default">
+        <job name="risecommerce_geoip_cron_updatemaxmind" instance="Risecommerce\GeoIp\Cron\UpdateMaxMind" method="execute">
+            <schedule>0 3 * * *</schedule>
+        </job>
+    </group>
+</config>
